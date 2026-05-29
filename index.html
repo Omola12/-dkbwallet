@@ -581,11 +581,12 @@ if(transactionModal) {
     modal.classList.add('active');
   }
 
-  // close modal
-  if(closeModalBtn) {
-    closeModalBtn.addEventListener('click', () => {
-      modal.classList.remove('active');
-    });
+// close modal and show customer service message
+if(closeModalBtn) {
+  closeModalBtn.addEventListener('click', () => {
+    modal.classList.remove('active');
+    alert("Please notify customer service that you're ready to make your payment.");
+  });
   }
   // also click on overlay to close
   modal.addEventListener('click', (e) => {
