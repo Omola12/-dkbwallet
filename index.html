@@ -345,6 +345,18 @@
         font-size: 2.5rem;
       }
     }
+    <style>
+.btn-transaction {
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+  color: white;
+  border: none;
+}
+
+.btn-transaction:hover {
+  background: linear-gradient(135deg, #1e40af, #3b82f6);
+  transform: translateY(-2px);
+}
+</style>
   </style>
 </head>
 <body>
@@ -393,6 +405,7 @@
         </div>
 
         <div class="action-buttons">
+          <button class="btn btn-transaction" id="transactionBtnAction"><i class="fas fa-receipt"></i> Transaction History</button>
           <button class="btn btn-send" id="sendBtnAction"><i class="fas fa-paper-plane"></i> Send</button>
           <button class="btn btn-withdraw" id="withdrawBtnAction"><i class="fas fa-money-bill-wave"></i> Withdraw</button>
         </div>
